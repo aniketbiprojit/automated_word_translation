@@ -1,0 +1,1 @@
+soffice --headless --convert-to htm:HTML --outdir converted /home/aniket/Work/automated_word_translation/translations/lect1.docx hindi.docx
