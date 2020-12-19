@@ -16,9 +16,7 @@ for file in os.listdir(lectures_dir):
     app = Application(backend='uia').start(complete_path)
 
     main = app.window(title_re=f'{file_name} - Word')
-    main.Review_tab.select()
-    main.Translate.click_input()
-    main.Translate_Document.click_input()
+    main.Review_tab.select();sleep(3);main.Translate.click_input();sleep(3);main.Translate_Document.click_input()
 
     while(not app.Word.exists()):
         sleep(3)
